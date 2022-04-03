@@ -3,8 +3,11 @@ import { fileURLToPath, URL } from "url";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 
+import { name } from "./package.json";
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: `/${name}/`,
   plugins: [Vue()],
   resolve: {
     alias: {
