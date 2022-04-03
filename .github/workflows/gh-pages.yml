@@ -42,7 +42,6 @@ jobs:
 
       - run: yarn install --immutable --immutable-cache
       - run: yarn build
-      - run: yarn export
 
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
